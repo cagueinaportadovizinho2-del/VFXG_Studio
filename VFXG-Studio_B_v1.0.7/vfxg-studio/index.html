@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VFXG Studio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <b>VFXG Studio</b>
+  <button id="bPlay">⏸ Pausar</button>
+  <button id="bShot">💥 Disparar</button>
+  <button id="bReset">↺ Reiniciar</button>
+  <span class="sp"></span>
+  <button id="bGodot" class="hl">📦 Exportar pacote Godot (.zip)</button>
+  <button id="bSheet">Sprite sheet</button>
+  <input type="file" id="fAssets" accept="image/*,.obj,.glb,.gltf" multiple hidden>
+</header>
+<div id="app">
+  <aside id="presets">
+    <h3>Presets</h3>
+    <div id="presetList"></div>
+    <h3>Biblioteca</h3>
+    <button id="bAdd" class="hl">＋ Importar textura / modelo</button>
+    <div id="library"></div>
+  </aside>
+  <main id="view"><div id="info"></div></main>
+  <aside id="panel"></aside>
+</div>
+<script src="js/lib/three.min.js"></script>
+<script src="js/lib/GLTFLoader.js"></script>
+<script src="js/lib/OBJLoader.js"></script>
+<script src="js/lib/TransformControls.js"></script>
+<script src="js/core/params.js"></script>
+<script src="js/export/util.js"></script>
+<script src="js/core/textures.js"></script>
+<script src="js/core/assets.js"></script>
+<script src="js/core/store.js"></script>
+<script src="js/export/zip.js"></script>
+<script src="js/core/particles.js"></script>
+<script src="js/core/stage.js"></script>
+<script src="js/core/intersection.js"></script>
+<script src="js/core/dissolve.js"></script>
+<script src="js/core/presets.js"></script>
+<script src="js/ui/panel.js"></script>
+<script src="js/ui/library.js"></script>
+<script src="js/export/godot.js"></script>
+<script src="js/export/sheet.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
